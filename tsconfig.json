@@ -1,0 +1,7 @@
+{
+  "compilerOptions": {
+    "rootDir": "./src",   // De dónde saca los archivos .ts
+    "outDir": "./dist"    // Dónde guarda los archivos .js (el "build")
+  },
+  "include": ["src/**/*"] // Asegura que solo compile lo que está en src
+}
