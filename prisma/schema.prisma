@@ -1,0 +1,24 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Tarea {
+  id            Int      @id @default(autoincrement())
+  titulo        String
+  prioridad     String   
+  completada    Boolean  @default(false)
+  fechaCreacion DateTime @default(now())
+}
+
+model Alumno {
+  id               Int      @id @default(autoincrement())
+  nombre           String
+  email            String   @unique
+  activo           Boolean  @default(true)
+  fechaInscripcion DateTime @default(now())
+}

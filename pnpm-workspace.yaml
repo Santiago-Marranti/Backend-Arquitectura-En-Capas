@@ -1,6 +1,11 @@
 allowBuilds:
+  '@prisma/client': false
+  '@prisma/engines': false
+  '@scarf/scarf': false
   better-sqlite3: true
   esbuild: true
+  prisma: false
+  workerd: false
 minimumReleaseAgeExclude:
   - '@vitest/expect@4.1.11'
   - '@vitest/mocker@4.1.11'

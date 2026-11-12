@@ -2,6 +2,13 @@
 
 Este proyecto implementa una API RESTful robusta estructurada bajo una **Arquitectura en Capas** estricta, utilizando **TypeScript (ESM)**, **Express**, persistencia con **SQLite**, y una completa suite de pruebas automatizadas que incluye **Pruebas Unitarias con Mocks (Vitest)** y **Pruebas de Comportamiento BDD (Cucumber / Gherkin)**.
 
+Ahora se incorporo Swagger para ver los endpoints e interactuar con ellos.
+
+En local, se accede desde http://localhost:3000/api-docs/
+
+![alt text](imagenes/swagger.png)
+
+Ademas, se agrego persistencia con Prisma como ORM con PostgreSQL. Para levantar la base de datos usar el archivo de docker compose con el comando correspondiente (docker-compose up -dW).
 ---
 
 ## 🛠️ Tecnologías y Stack
